@@ -4,12 +4,12 @@
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.1.0](https://img.shields.io/badge/Version-0.1.0-orange.svg)
-  ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-website.svg?style=flat)
-  ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-website.svg?style=flat)
-  [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-website/pulls)
-  [![First Contributors](https://img.shields.io/badge/first-contributors-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-website/pulls)
-  ![GitHub repo size](https://img.shields.io/github/repo-size/AlexandrAnatoliev/project-euler-website)
+  ![Version 0.1.1](https://img.shields.io/badge/Version-0.1.1-orange.svg)
+  ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-blog.svg?style=flat)
+  ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-blog.svg?style=flat)
+  [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-blog/pulls)
+  [![First Contributors](https://img.shields.io/badge/first-contributors-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-blog/pulls)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/AlexandrAnatoliev/project-euler-blog)
 </div>
 
   > **Author:** Alexandr Anatoliev
@@ -28,11 +28,11 @@ git submodule add https://github.com/AlexandrAnatoliev/project-euler-css.git src
 
 ```
 # Структура после добавления
-project-euler-website/
+project-euler-blog/
 ├── src/
-│   ├── styles/          # Это связанный репозиторий
-│   │   └── main.css
-│   └── index.html
+│   └── styles/          # Это связанный репозиторий
+│       └── main.css
+├────── index.html
 └── .gitmodules
 ```
 
@@ -44,14 +44,14 @@ project-euler-website/
 
 #### При клонировании репозитория использовать флаг --recursive
 ```
-git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-website.git
+git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-blog.git
 ```
 
 #### Или так
 ```
 # Обычное клонирование — папка src/styles будет пустой!
-git clone https://github.com/AlexandrAnatoliev/project-euler-website.git
-cd project-euler-website
+git clone https://github.com/AlexandrAnatoliev/project-euler-blog.git
+cd project-euler-blog
 ls src/styles/  # пусто или не существует
 
 # Нужно инициализировать и обновить подмодули
