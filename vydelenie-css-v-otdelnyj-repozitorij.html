@@ -31,7 +31,7 @@
 
       <h3>Подключение Git-подмодуля репозитория</h3>
 
-      <p>Чтобы подключить репозиторий <b>project-euler-css</b> 
+      <p>Чтобы подключить репозиторий <b>project-euler-css</b>, 
       как Git-подмодуль репозитория <b>project-euler-blog</b> нужно зайти в проект...</p>
 <pre class="vimcode">
   project-euler-blog/
@@ -53,8 +53,8 @@
   └── .gitmodules
 </pre>
 
-      <p>В html файл проекта (<b>index.html</b>) необходимо добавить ссылку 
-      на файл внутри подмодуля (<b>main.css</b>)</p>
+      <p>В HTML файл проекта (<b>index.html</b>) необходимо добавить ссылку 
+      на файл внутри подмодуля (<b>main.css</b>):</p>
       <div class="vimcode">
         &lt;link rel="stylesheet" href="src/styles/main.css"&gt;
       </div>
@@ -63,19 +63,19 @@
     <section>
       <h3>Клонирование репозитория с Git-подмодулем</h3>
 
-      <p>При клонировании репозитория необходимо использовать флаг <b>--recursive</b></p> 
+      <p>При клонировании репозитория необходимо использовать флаг <b>--recursive</b>:</p> 
       <div class="vimcode">
         git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-blog.git
       </div>
 
-      <p>Иначе, при обычном клонировании - папка src/styles будет пустой.</p>
+      <p>Иначе, при обычном клонировании - папка src/styles будет пустой:</p>
 <pre class="vimcode">
 git clone https://github.com/AlexandrAnatoliev/project-euler-blog.git
 cd project-euler-blog
 ls src/styles/  # пусто или не существует
 </pre>
 
-      <p>В этом случае нужно инициализировать и обновить подмодули</p>
+      <p>В этом случае нужно инициализировать и обновить подмодули:</p>
 <pre class="vimcode">
 git submodule init    
 git submodule update 
@@ -85,23 +85,23 @@ git submodule update
     <section>
       <h3>Обновление подмодуля до последней версии</h3>
 
-      <p>Перейти в папку подмодуля</p>
+      <p>Перейти в папку подмодуля:</p>
       <div class="vimcode">
         cd src/styles
       </div>
 
-      <p>Обновиться до последнего коммита в ветке main</p>
+      <p>Обновиться до последнего коммита в ветке main:</p>
 <pre class="vimcode">
 git checkout main
 git pull
 </pre>
 
-      <p>Вернуться в основной репозиторий</p>
+      <p>Вернуться в основной репозиторий:</p>
       <div class="vimcode">
         cd ../..
       </div>
 
-      <p>Зафиксировать изменение (новую ссылку на коммит) </p>
+      <p>Зафиксировать изменение (новую ссылку на коммит):</p>
 <pre class="vimcode">
 git add src/styles
 git commit -m "Update css to latest version"
