@@ -32,7 +32,7 @@ project-euler-blog/
 ├── src/
 │   └── styles/          # Это связанный репозиторий
 │       └── main.css
-├────── index.html
+├── index.html
 └── .gitmodules
 ```
 
