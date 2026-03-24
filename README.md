@@ -4,7 +4,7 @@
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.1.2](https://img.shields.io/badge/Version-0.1.2-orange.svg)
+  ![Version 0.1.3](https://img.shields.io/badge/Version-0.1.3-orange.svg)
   ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-blog.svg?style=flat)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-blog.svg?style=flat)
   [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-blog/pulls)
@@ -76,18 +76,3 @@ git add src/styles
 git commit -m "Update project-euler-css to latest version"
 ```
 
-#### Изменение файлов внутри подмодуля
-```
-# 1. Вносите изменения внутри src/styles
-cd src/styles
-echo "/* new styles */" >> main.css
-git add main.css
-git commit -m "Add new styles"
-git push  # пушим в репозиторий project-euler-css
-
-# 2. Возвращаетесь в основной репозиторий
-cd ../..
-git add src/styles  # фиксируем новую ссылку на обновленный коммит
-git commit -m "Update submodule reference"
-git push  # пушим в основной репозиторий
-```
