@@ -12,10 +12,6 @@
   [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-blog/pulls)
   [![First Contributors](https://img.shields.io/badge/first-contributors-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-blog/pulls)
   ![GitHub repo size](https://img.shields.io/github/repo-size/AlexandrAnatoliev/project-euler-blog)
-
-  <p>CSS-настройки для блога выделены в отдельный репозиторий, что позволяет
-    использовать их повторно в разных проектах и избавляет от необходимости
-    вносить одни и те же изменения в каждый проект.</p>
 </div>
 
   > **Author:** Alexandr Anatoliev
@@ -24,12 +20,18 @@
 
 ---
 
-#### При клонировании репозитория использовать флаг --recursive
+#### Клонирование репозитория 
+
+CSS-настройки для блога выделены в отдельный репозиторий, что позволяет
+использовать их повторно в разных проектах и избавляет от необходимости
+вносить одни и те же изменения в каждый проект.
+
+* Поэтому при клонировании репозитория использовать флаг --recursive
 ```
 git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-blog.git
 ```
 
-#### Или так
+* Или так
 ```
 # Обычное клонирование — папка src/styles будет пустой!
 git clone https://github.com/AlexandrAnatoliev/project-euler-blog.git
