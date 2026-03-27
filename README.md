@@ -1,10 +1,12 @@
 <div align="center">
-  <a id="english"></a>
-  <h1>Project-Euler-Blog</h1>
+  <a id="russian"></a>
+  <h1>Добро пожаловать в Project-Euler-Blog</h1>
+
+  <p>Данный проект - это сборник статей для моего блога</p>
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.3.5](https://img.shields.io/badge/Version-0.3.5-orange.svg)
+  ![Version 0.3.6](https://img.shields.io/badge/Version-0.3.6-orange.svg)
   ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-blog.svg?style=flat)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-blog.svg?style=flat)
   [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-blog/pulls)
@@ -18,35 +20,20 @@
 
 ---
 
-## Выделение CSS настроек в отдельный репозиторий
+<div align="center">
+  <h3>Клонирование репозитория</h3>
+</div>
 
-#### Подключить репозиторий как Git-подмодуль в основном репозитории:
-```
-git submodule add https://github.com/AlexandrAnatoliev/project-euler-css.git src/styles
-```
+CSS-настройки для блога выделены в отдельный репозиторий, что позволяет
+использовать их повторно в разных проектах и избавляет от необходимости
+вносить одни и те же изменения в каждый проект.
 
-```
-# Структура после добавления
-project-euler-blog/
-├── src/
-│   └── styles/          # Это связанный репозиторий
-│       └── main.css
-├── index.html
-└── .gitmodules
-```
-
-#### Добавить в html файл
-```
-<!-- Относительная ссылка на файл внутри подмодуля -->
-<link rel="stylesheet" href="src/styles/main.css">
-```
-
-#### При клонировании репозитория использовать флаг --recursive
+* Поэтому при клонировании репозитория использовать флаг --recursive
 ```
 git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-blog.git
 ```
 
-#### Или так
+* Или так
 ```
 # Обычное клонирование — папка src/styles будет пустой!
 git clone https://github.com/AlexandrAnatoliev/project-euler-blog.git
@@ -58,7 +45,10 @@ git submodule init    # инициализирует подмодули из .gi
 git submodule update  # загружает актуальные файлы
 ```
 
-#### Обновление подмодуля до последней версии
+<div align="center">
+  <h3>Обновление подмодуля до последней версии</h3>
+</div>
+
 ```
 # Перейти в папку подмодуля
 cd src/styles
