@@ -2,7 +2,7 @@
   <a id="english"></a>
   <h1>Welcome to Project-Euler-Blog</h1>
 
-  <p>This project is collection of articles for my blog.</p> 
+  <p>This project is a collection of articles for my blog.</p> 
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
@@ -186,7 +186,7 @@ in the issue, you're ready to submit your changes!
 1. Stage your changes with the command:
 
 ```bash
-git add files-that-you-changed
+git add files-you-changed
 ```
 
 2. Commit your changes with the command:
@@ -206,8 +206,8 @@ Once you've pushed your changes to GitHub,
 you're ready to create a pull request. 
 Go to your forked repository on GitHub.
 
-- You should see message "fix-issue had recent pushes" 
-(or whatever your branch name is) and button 
+- You should see a message "fix-issue had recent pushes" 
+(or whatever your branch name is) and a button 
 "Compare & pull request" next to it.
 
 - Click the "Compare & pull request" button 
@@ -274,7 +274,7 @@ to open source!
   <h3>Contact</h3>
 </div>
 
-For any queries, feel free to open an issue, write to 
+For any queries, feel free to open an issue, write in  
 [Discussions](https://github.com/AlexandrAnatoliev/project-euler-blog/discussions/14)
 or reach out to me at per-1986@list.ru.
 
@@ -282,7 +282,7 @@ or reach out to me at per-1986@list.ru.
 
 <div align="center">
   <a id="list-of-contributors"></a>
-  <h2>List of Contributors</h2>
+  <h3>List of Contributors</h3>
 </div>
 
 Massive thanks to all the fine individuals 
