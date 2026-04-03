@@ -6,7 +6,7 @@
 
     <title>Project Euler Blog: Проект Эйлер 2 задача на PHP </title>
     <meta name="description"
-          content="Проект Эйлера 2 задача (четные числа Фибоначчи) позволяет отработать конструкции языка PHP"> 
+          content="Проект Эйлера 2 задача (четные числа Фибоначчи), реализация на PHP с онлайн-калькулятором для проверки вычислений"> 
   </head>
 
   <body>
@@ -78,14 +78,14 @@
       </div>
 
       <p>
-        Во-вторых, четное число делится на <b>2</b> без остатка.
+        Во-вторых, четное число делится на <b>2</b> без остатка:
       </p>
       <div class="vimcode" id='vimCodeElement'>
         <span id="L7" class="LineNr">7  </span>    <span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">%</span> <span class="Constant">2</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Special">)</span> <span class="Special">{</span>
       </div>
 
       <p>Ну и главное, не нужно вычислять каждый элемент ряда каждый раз заново.<br> 
-      Потому, как только будет получено число Фибоначчи, следующее за первыми двумя.</p>
+      Поэтому как только будет получено число Фибоначчи, следующее за первыми двумя:</p>
       <div class="vimcode" id='vimCodeElement'>
         <span id="L10" class="LineNr">10 </span><span class="Statement">$</span><span class="Identifier">next_fib</span>   <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">first_fib</span> <span class="Statement">+</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
       </div>
@@ -102,7 +102,7 @@
 
       <p>
         ...второе – третьего (суммы первых двух).<br /> Такой цикл продолжается снова 
-        и снова до тех пор, пока в итоге не дойдет до искомых <b>4000000</b>.</p>
+        и снова до тех пор, пока в итоге не дойдет до искомых <b>4 000 000</b>.</p>
 
     <section>
       <h2>Для контрибьютеров</h2>
@@ -117,7 +117,7 @@
       </aside>
 
       <p>В случае, если вы заметили какие то неточности в статье или хотите предложить
-      какие-либо изменения в верстке этого сайта, вы всегда можете сделать pull request
+      какие-либо изменения в верстке этого сайта, вы всегда можете создать pull request
       в этот проект.</p>
 
       <aside class="article-preview">
