@@ -52,7 +52,7 @@
     <section>
       <h3>Описание алгоритма работы программы</h3>
 
-<pre class="vimcode" id='vimCodeElement'>
+<pre class="vimcode">
 <span id="L1" class="LineNr">1  </span><span class="Special">&lt;?php</span>
 <span id="L2" class="LineNr">2  </span><span class="Statement">$</span><span class="Identifier">first_fib</span>  <span class="Statement">=</span> <span class="Constant">1</span>;
 <span id="L3" class="LineNr">3  </span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">=</span> <span class="Constant">2</span>;
@@ -80,23 +80,23 @@
       <p>
         Во-вторых, четное число делится на <b>2</b> без остатка:
       </p>
-      <div class="vimcode" id='vimCodeElement'>
+      <div class="vimcode">
         <span id="L7" class="LineNr">7  </span>    <span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">%</span> <span class="Constant">2</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Special">)</span> <span class="Special">{</span>
       </div>
 
       <p>Ну и главное, не нужно вычислять каждый элемент ряда каждый раз заново.<br> 
       Поэтому как только будет получено число Фибоначчи, следующее за первыми двумя:</p>
-      <div class="vimcode" id='vimCodeElement'>
+      <div class="vimcode">
         <span id="L10" class="LineNr">10 </span><span class="Statement">$</span><span class="Identifier">next_fib</span>   <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">first_fib</span> <span class="Statement">+</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
       </div>
 
       <p>...значения обновляются:</p>
-      <div class="vimcode" id='vimCodeElement'>
+      <div class="vimcode">
         <span id="L11" class="LineNr">11 </span><span class="Statement">$</span><span class="Identifier">first_fib</span>  <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
       </div>
       <p>...первое число принимает значение второго:</p>
 
-      <div class="vimcode" id='vimCodeElement'>
+      <div class="vimcode">
         <span id="L12" class="LineNr">12 </span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">next_fib</span>;
       </div>
 
