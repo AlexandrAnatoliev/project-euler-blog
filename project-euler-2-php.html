@@ -53,51 +53,51 @@
       <h3>Описание алгоритма работы программы</h3>
 
 <pre class="vimcode">
-<span id="L1" class="LineNr">1  </span><span class="Special">&lt;?php</span>
-<span id="L2" class="LineNr">2  </span><span class="Statement">$</span><span class="Identifier">first_fib</span>  <span class="Statement">=</span> <span class="Constant">1</span>;
-<span id="L3" class="LineNr">3  </span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">=</span> <span class="Constant">2</span>;
-<span id="L4" class="LineNr">4  </span><span class="Statement">$</span><span class="Identifier">max_fib</span>    <span class="Statement">=</span> <span class="Constant">4000000</span>;
-<span id="L5" class="LineNr">5  </span><span class="Statement">$</span><span class="Identifier">answer</span>     <span class="Statement">=</span> <span class="Constant">0</span>;
-<span id="L6" class="LineNr">6  </span><span class="Statement">while</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement"><=</span> <span class="Statement">$</span><span class="Identifier">max_fib</span><span class="Special">)</span> <span class="Special">{</span>
-<span id="L7" class="LineNr">7  </span>    <span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">%</span> <span class="Constant">2</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Special">)</span> <span class="Special">{</span>
-<span id="L8" class="LineNr">8  </span>        <span class="Statement">$</span><span class="Identifier">answer</span> <span class="Statement">+=</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
-<span id="L9" class="LineNr">9  </span>    <span class="Special">}</span>
-<span id="L10" class="LineNr">10 </span><span class="Statement">$</span><span class="Identifier">next_fib</span>   <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">first_fib</span> <span class="Statement">+</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
-<span id="L11" class="LineNr">11 </span><span class="Statement">$</span><span class="Identifier">first_fib</span>  <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
-<span id="L12" class="LineNr">12 </span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">next_fib</span>;
-<span id="L13" class="LineNr">13 </span><span class="Special">}</span>
-<span id="L14" class="LineNr">14 </span><span class="PreProc">echo</span> <span class="Constant">'Answer = '</span> <span class="Statement">.</span> <span class="Statement">$</span><span class="Identifier">answer</span>;
-<span id="L15" class="LineNr">15 </span><span class="Special">?&gt;</span>
+<span class="LineNr">1  </span><span class="Special">&lt;?php</span>
+<span class="LineNr">2  </span><span class="Statement">$</span><span class="Identifier">first_fib</span>  <span class="Statement">=</span> <span class="Constant">1</span>;
+<span class="LineNr">3  </span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">=</span> <span class="Constant">2</span>;
+<span class="LineNr">4  </span><span class="Statement">$</span><span class="Identifier">max_fib</span>    <span class="Statement">=</span> <span class="Constant">4000000</span>;
+<span class="LineNr">5  </span><span class="Statement">$</span><span class="Identifier">answer</span>     <span class="Statement">=</span> <span class="Constant">0</span>;
+<span class="LineNr">6  </span><span class="Statement">while</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement"><=</span> <span class="Statement">$</span><span class="Identifier">max_fib</span><span class="Special">)</span> <span class="Special">{</span>
+<span class="LineNr">7  </span>    <span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">%</span> <span class="Constant">2</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Special">)</span> <span class="Special">{</span>
+<span class="LineNr">8  </span>        <span class="Statement">$</span><span class="Identifier">answer</span> <span class="Statement">+=</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
+<span class="LineNr">9  </span>    <span class="Special">}</span>
+<span class="LineNr">10 </span><span class="Statement">$</span><span class="Identifier">next_fib</span>   <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">first_fib</span> <span class="Statement">+</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
+<span class="LineNr">11 </span><span class="Statement">$</span><span class="Identifier">first_fib</span>  <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
+<span class="LineNr">12 </span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">next_fib</span>;
+<span class="LineNr">13 </span><span class="Special">}</span>
+<span class="LineNr">14 </span><span class="PreProc">echo</span> <span class="Constant">'Answer = '</span> <span class="Statement">.</span> <span class="Statement">$</span><span class="Identifier">answer</span>;
+<span class="LineNr">15 </span><span class="Special">?&gt;</span>
 </pre>
 
       <p>Во-первых, нужно помнить, что согласно заданию и самому
       определению чисел Фибоначчи: “следующий элемент получается при
       сложении двух предыдущих”.</p>
       <div class="vimcode" id='vimCodeElement'>
-        <span id="L10" class="LineNr">10 </span><span class="Statement">$</span><span class="Identifier">next_fib</span>   <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">first_fib</span> <span class="Statement">+</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
+        <span class="LineNr">10 </span><span class="Statement">$</span><span class="Identifier">next_fib</span>   <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">first_fib</span> <span class="Statement">+</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
       </div>
 
       <p>
         Во-вторых, четное число делится на <b>2</b> без остатка:
       </p>
       <div class="vimcode">
-        <span id="L7" class="LineNr">7  </span>    <span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">%</span> <span class="Constant">2</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Special">)</span> <span class="Special">{</span>
+        <span class="LineNr">7  </span>    <span class="Statement">if</span> <span class="Special">(</span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">%</span> <span class="Constant">2</span> <span class="Statement">==</span> <span class="Constant">0</span> <span class="Special">)</span> <span class="Special">{</span>
       </div>
 
       <p>Ну и главное, не нужно вычислять каждый элемент ряда каждый раз заново.<br> 
       Поэтому как только будет получено число Фибоначчи, следующее за первыми двумя:</p>
       <div class="vimcode">
-        <span id="L10" class="LineNr">10 </span><span class="Statement">$</span><span class="Identifier">next_fib</span>   <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">first_fib</span> <span class="Statement">+</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
+        <span class="LineNr">10 </span><span class="Statement">$</span><span class="Identifier">next_fib</span>   <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">first_fib</span> <span class="Statement">+</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
       </div>
 
       <p>...значения обновляются:</p>
       <div class="vimcode">
-        <span id="L11" class="LineNr">11 </span><span class="Statement">$</span><span class="Identifier">first_fib</span>  <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
+        <span class="LineNr">11 </span><span class="Statement">$</span><span class="Identifier">first_fib</span>  <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">second_fib</span>;
       </div>
       <p>...первое число принимает значение второго:</p>
 
       <div class="vimcode">
-        <span id="L12" class="LineNr">12 </span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">next_fib</span>;
+        <span class="LineNr">12 </span><span class="Statement">$</span><span class="Identifier">second_fib</span> <span class="Statement">=</span> <span class="Statement">$</span><span class="Identifier">next_fib</span>;
       </div>
 
       <p>
